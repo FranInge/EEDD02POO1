@@ -17,6 +17,9 @@ public class Main {
         System.out.println("al3: " + al3.toString()); //"00 ... 1-E" 123 "adasdasdasd   "
         System.out.println("al4: " + al4.toString()); //"00 ... 1-E" 123 "adasdasdasd   "
 
+        //System.out.println("al2 universidad: " + al2.getUniversidad()); //No se puede llamar, porque es un metodo de clase (no de instancia)
+        System.out.println("al2 universidad: " + Alumno.getUniversidad()); //Se llama de esta forma porque es un metodo de clase
+
         //al3.DNI="00.000.002-E"; //No se puede cambiar el DNI porque esta en private el valor del atributo
 
         al3.setDNI("00.000.002-E"); //De esta forma si se puede cambiar el valor de DNI
