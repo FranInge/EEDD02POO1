@@ -13,6 +13,10 @@ public class Main {
 
         Alumno al4 = new Alumno("00.000.001-E", 123, "asdasdasda"); //Una nueva referencia y objeto, pero con los mismo datos que al2 y su direccion de memoria es distinta
         System.out.println("al: " + al.toString()); //"00 ... 0" 0 "nombre      "
+
+        System.out.println("Universidad: " + al.getUniversidad());
+        System.out.println("Universidad: " + Alumno.getUniversidad());
+
         System.out.println("al2: " + al2.toString()); //"00 ... 1-E" 123 "adasdasdasd   "
         System.out.println("al3: " + al3.toString()); //"00 ... 1-E" 123 "adasdasdasd   "
         System.out.println("al4: " + al4.toString()); //"00 ... 1-E" 123 "adasdasdasd   "
@@ -63,9 +67,9 @@ public class Main {
         }
 
         if(al.equals (al4)){
-            System.out.println("al y al4 son objetos que se cosnideran iguales porque tienen el mismo DNI");
+            System.out.println("al y al4 son objetos que se consideran iguales porque tienen el mismo DNI");
         } else {
-            System.out.println("al y al4 son objetos que se NO cosnideran iguales porque NO tienen el mismo DNI");
+            System.out.println("al y al4 son objetos que se NO consideran iguales porque NO tienen el mismo DNI");
         }
 
         if(al.hashCode() == al4.hashCode()){

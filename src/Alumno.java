@@ -9,7 +9,6 @@ public class Alumno { //Los identificadores (nombres) de las clases comienzan po
         return "Universidad de UAX";
     }
 
-
     public Alumno(){ //Metodo constructor por defecto, si no se indica nada, se asignan valores por defecto Si no se indica nada, se asignan valores por defecto
         DNI="00.000.000-E";
         NP=0;
